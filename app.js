@@ -23,6 +23,12 @@ app.get("/", function(req, res){
 //4 this is where we put the code we actually want to execute
 app.post("/", function(req, res){
 
+  var firstName = req.body.fName;
+  var lastName = req.body.lName;
+  var email = req.body.email;
+
+  console.log(firstName, lastName, email);
+
 });
 
 // 1)this is what tells the server "what frequency we are transmitting on"
