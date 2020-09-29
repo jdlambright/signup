@@ -10,7 +10,7 @@ const app = express();
 // if this is not done they style sheets etc do not link properly
 // we created a folder called public an placed everything in it
 app.use(express.static("public"));
-// this allows us to process code behind the scenes
+// this allows us to process code behind the scenes sends input to api
 app.use(bodyParser.urlencoded({extended: true}));
 
 
