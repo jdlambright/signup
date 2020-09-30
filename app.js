@@ -32,6 +32,12 @@ app.post("/", function(req, res){
 });
 
 // 1)this is what tells the server "what frequency we are transmitting on"
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("works on 3000")
 });
+
+// API key
+//2da29ae13f6733e59098892eae600c88-us2
+
+// list id
+// e6f05db055
